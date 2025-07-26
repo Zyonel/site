@@ -1,0 +1,124 @@
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.heading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    flex-wrap: wrap;
+}
+.leoshy-container {
+    display: flex;
+    gap: 20px;
+}
+.leoshy:hover {
+    transform: scale(3,3);
+}
+.rexl {
+    position: relative;
+    width: 250px;
+    height: 183px;
+}
+.slide {
+    width: 100%;
+    max-width: 400px; /* Adjust width */
+    height: auto; /* Keeps aspect ratio */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.rexl:hover {
+    transform: scale(1.3);
+}
+body {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out;
+}
+.text-container {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+h1 {
+    color: pink;
+}
+.poem-container {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.heading-container {
+    display: flex;
+    gap: 20px; /* Spacing between headings */
+    
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 10vh;
+    flex-wrap: wrap;
+}
+.heading {
+    font-size: 18px;
+    font-weight: bold;
+    color: gray;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+ /* Make layout stack on smaller screens */
+@media (max-width: 768px) {
+        main {
+            padding: 10px;
+        }
+    .heading-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        height: auto;
+        position: absolute;
+        left: auto;
+        margin-bottom: 20px; 
+    }
+
+    .heading {
+        font-size: 16px;
+        margin: 5px 0;
+        text-align: center;
+    }
+    .heading img {
+        width: 40px;
+        height: 40px;
+    }
+    
+
+    .text-container, .poem-container {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .slide {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .heading img {
+        width: 40px;
+        height: 40px;
+    }
+}
